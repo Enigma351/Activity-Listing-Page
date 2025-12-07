@@ -1,55 +1,55 @@
-Learning Dashboard – React + Vite
+My Learning – React + Vite
 
-A fully responsive learning activity dashboard built with React, Vite, Tailwind CSS, and Lucide Icons. This project provides a clean UI for tracking online classes, assignments, quizzes, and discussions, with advanced filtering, sorting, theming, and statistics.
-
-The application demonstrates component-driven architecture, reusable hooks, dark mode state management, and mobile-first responsive design.
+My Learning is a fully responsive activity dashboard built with React, Vite, Tailwind CSS, and Lucide Icons.
+It provides an intuitive interface for learners to track online classes, quizzes, assignments, and discussions.
+This project follows a component-driven architecture, leverages reusable hooks, supports light/dark themes, and is optimized for a mobile-first experience.
 
 Features
 Dashboard & Activities
 
-Displays learning activities such as quizzes, assignments, classes, and discussions.
+Displays multiple types of learning activities
 
-Status indicators including completed, in progress, overdue, and not started.
+Status indicators: Completed, In Progress, Overdue, Not Started
 
-Dynamic details for each activity type.
+Detailed metadata for each activity type
 
-Responsive grid layout that adapts to all screen sizes.
+A responsive card layout that adapts to all device sizes
 
 Filtering & Sorting System
 
-Search by title or program.
+Search by activity title or program
 
 Filter by:
 
 Program
 
-Activity type
+Type
 
 Status
 
-Sort by recent or due date.
+Sort activities by Most Recent or Due Date
 
-Clear all filters with one click.
+Clear all filters with one action
 
-Filter counter badge to track active filters.
+Visual badge showing the number of active filters
 
 Dark Mode Support
 
-Persistent theme toggle (light/dark).
+One-click theme toggle
 
-Smooth transitions between modes.
+Smooth transitions
 
-Dark-mode-aware components and styles.
+Theme-aware components and text colors
 
 UI/UX Highlights
 
-Clean, semantic, responsive components.
+Clean, semantic, accessible components
 
-Mobile-first layout with safe containers.
+Mobile-first layout with no horizontal overflow
 
-Accessible interactions with focus styles.
+Keyboard-friendly interactive elements
 
-No horizontal overflow on any device.
+Ensures consistency across light/dark themes
 
 Tech Stack
 Core
@@ -64,107 +64,129 @@ Lucide React Icons
 
 State & Utilities
 
-Custom hooks: useActivities, useFilters, useTheme
+Custom hooks:
 
-Utility functions for formatting dates and managing constants
+useActivities
 
-Component-based reusable UI elements
+useFilters
+
+useTheme
+
+Utility helpers for:
+
+Date formatting
+
+Static constants
+
+Reusable components: ActivityCard, Header, FilterPanel, StatsCard, EmptyState
 
 Build Tools
 
-Vite development server and build pipeline
+Vite development server
 
 ESLint with recommended rules
 
 Hot Module Reloading (HMR)
 
-
-Getting Started
 Prerequisites
 
-Ensure the following are installed:
+You will need:
 
-Node.js 
+Node.js
 
-npm or yarn or pnpm
-
+npm, yarn, or pnpm
 
 Installation
 
-Install all dependencies:
+Install dependencies:
 
 npm install
 
-
-or
-
-yarn install
-
 Running the Development Server
-
-Start the local dev server with HMR:
-
 npm run dev
 
-
-Vite will start the application at:
-
-http://localhost:5173
-
 Building for Production
-
-Generate the optimized production build:
-
 npm run build
 
-
-This creates a dist/ folder with minified assets.
-
 Previewing the Production Build
-
-Use Vite’s preview command:
-
 npm run preview
 
-ESLint Configuration
-
-This project includes ESLint for code quality.
-To run linting:
-
+ESLint
 npm run lint
-
-
-You can extend the configuration by modifying .eslintrc.cjs.
 
 Styling
 
-The application uses Tailwind CSS with custom global styles located in index.css, including:
+The project uses Tailwind CSS with custom global styles located in index.css, including:
 
 Theme-aware colors
 
-Scrollbar styling
+Scrollbar customization
 
 Button utilities
 
-Focus-ring accessibility styles
+Focus styles for accessibility
 
-Responsive layout classes
+Responsive layout utility classes
 
-Tailwind config is defined in:
+Tailwind config file:
 
 tailwind.config.js
 
-Deployment
 
-You can deploy the production build to:
+The production build outputs to:
 
-Netlify
+dist/
 
-Vercel
+Next Steps
 
-GitHub Pages
+Based on the assignment expectations and room for further enhancement, below are possible next steps:
 
+1. Mobile-App Build (React Native / Expo)
 
-The dist/ folder contains the final optimized build for deployment.
+Implement a mobile version using React Native while reusing core logic and constants
 
+Maintain shared business logic through a /shared folder
 
+Add instructions for building Android or iOS apps
+
+2. API Integration
+
+Replace mock data with live API responses using fetch/axios
+
+Add loading and error states
+
+Implement pagination or infinite scrolling if needed
+
+3. Testing
+
+Add unit tests for hooks and components using Jest + React Testing Library
+
+Snapshot tests for UI consistency
+
+4. Performance Enhancements
+
+Memoize heavy operations
+
+Code-splitting and lazy loading for improved load times
+
+Pre-compute derived values for rendering efficiency
+
+5. Accessibility Improvements
+
+Ensure ARIA labels where applicable
+
+Expand keyboard interaction support
+
+Maintain WCAG-compliant contrast ratios
+
+6. Additional Features
+
+User profile section with activity summaries
+
+Progress tracking charts
+
+Local storage or backend sync of filter + theme preferences
+
+7. Extend Multiplatform Support
+
+Explore frameworks like Expo Router or React Native Web to unify web and mobile builds more deeply

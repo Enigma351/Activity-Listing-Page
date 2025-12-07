@@ -78,38 +78,6 @@ ESLint with recommended rules
 
 Hot Module Reloading (HMR)
 
-Folder Structure
-project/
-│
-├── public/
-│   └── favicon.svg
-│
-├── src/
-│   ├── components/
-│   │   ├── ActivityCard.jsx
-│   │   ├── FilterPanel.jsx
-│   │   ├── Header.jsx
-│   │   ├── StatsCard.jsx
-│   │   └── EmptyState.jsx
-│   │
-│   ├── hooks/
-│   │   ├── useActivities.js
-│   │   ├── useFilters.js
-│   │   └── useTheme.js
-│   │
-│   ├── utils/
-│   │   ├── dateUtils.js
-│   │   └── constants.js
-│   │
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-│
-├── .eslintrc.cjs
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── vite.config.js
 
 Getting Started
 Prerequisites
@@ -196,12 +164,7 @@ Vercel
 
 GitHub Pages
 
-AWS Amplify
-
-Firebase Hosting
 
 The dist/ folder contains the final optimized build for deployment.
 
-License
 
-This project is open-source and available under the MIT License.
